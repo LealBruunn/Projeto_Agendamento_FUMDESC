@@ -73,4 +73,4 @@ Abra **http://localhost:3000** no navegador
 
 ## Autor
 
-Sistema desenvolvido para FUMDESC 2026.2
+Sistema desenvolvido para Auxiliar a secretária da minha faculdade com agendamento FUMDESC 2026.2
