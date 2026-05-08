@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendamento FUMDESC 2026.2</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Agendamento de documentação</h1>
+    <p class="subtitle">FUMDESC 2026.2 &nbsp;·&nbsp; ⚠️ Realize o agendamento somente após concluir a renovação no sistema do FUMDESC.</p>
+   
+    <label for="student-name">Seu nome completo</label>
+    <input type="text" id="student-name" placeholder="Digite seu nome..." maxlength="60" />
+   
+    <div class="day-tabs" id="day-tabs"></div>
+   
+    <div id="slots-container"></div>
+   
+    <div class="confirm-area" id="confirm-area">
+      <p>Confirmar agendamento:</p>
+      <strong id="confirm-summary"></strong>
+      <button class="confirm-btn" id="confirm-btn" onclick="confirmBooking()">Confirmar vaga</button>
+    </div>
+   
+    <div class="toast" id="toast"></div>
+  </div>
+ 
+  <script src="js/script.js"></script>
+</body>
+</html>
