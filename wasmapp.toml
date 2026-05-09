@@ -1,55 +1,9 @@
-# Configuração para Wasmer deployment
-# Sistema de Agendamento FUMDESC 2026.2
-
 [app]
 name = "agendamento-fumdesc"
-version = "1.0.0"
-description = "Sistema de Agendamento para FUMDESC 2026.2"
 
 [env]
-NODE_ENV = "production"
-PORT = "3000"
-
-[[env_vars]]
-name = "ADMIN_TOKEN"
-description = "Token de autenticação para rotas admin"
-
-[[env_vars]]
-name = "NEXT_PUBLIC_SUPABASE_URL"
-description = "URL do Supabase"
-
-[[env_vars]]
-name = "NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY"
-description = "Chave pública do Supabase"
-
-[[env_vars]]
-name = "ALLOWED_ORIGINS"
-description = "URLs permitidas (CORS)"
+vars = { NODE_ENV = "production" }
 
 [build]
-# Instalar dependências
-steps = [
-  "cd backend && npm install",
-  "npm install"
-]
-
-# Comando para iniciar
-start_cmd = "cd backend && npm start"
-
-[http]
-# Porta que a aplicação usa
-port = 3000
-
-[files]
-include = [
-  "index.html",
-  "css/**",
-  "js/**",
-  "backend/**"
-]
-
-exclude = [
-  "backend/node_modules",
-  ".git",
-  ".env"
-]
+build-cmd = "npm install"
+run-cmd = "npm start"
