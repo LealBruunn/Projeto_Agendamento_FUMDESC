@@ -1,9 +1,0 @@
-[app]
-name = "agendamento-fumdesc"
-
-[env]
-vars = { NODE_ENV = "production" }
-
-[build]
-build-cmd = "npm install"
-run-cmd = "npm start"
